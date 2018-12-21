@@ -1,0 +1,76 @@
+.form
+	label.error
+		position: absolute
+		bottom: -25px
+		right: 25px
+		left: 25px
+		transition: all .3s
+		animation: error .3s linear 1 forwards
+		color: red
+		text-align: center
+		font-weight: 600
+		background-color: $accent
+		border-radius: 10px
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: -8px
+			margin-left: -2px
+			border-bottom: 4px solid $accent
+			border-left: 4px solid transparent
+			border-right: 4px solid transparent
+			border-top: 4px solid transparent
+
+	input
+		max-width: 200px
+		padding: 0 10px
+		margin-bottom: 10px
+
+	label
+		color: #54595f
+		font-size: 16px
+		margin-bottom: 5px
+		font-weight: 800
+
+		span
+			color: red
+
+	&__line
+		position: relative
+		margin-bottom: 20px
+		display: flex
+		flex-direction: column
+
+		&:last-child
+			margin-bottom: 0
+
+	&__row
+		display: flex
+		justify-content: space-between
+
+		.form__line
+			width: 30%
+
+			p
+				font-size: 12px
+				font-style: italic
+				color: #54595f
+
+		&--two
+			.form__line
+				width: 45%
+
+			input
+				border: 0
+
+	&__row_btn
+		margin-top: 30px
+		margin-bottom: 50px
+
+	.btn
+		width: 100%
+		border-radius: 2px
+
+
+

@@ -1,0 +1,153 @@
+.price
+
+	&__hero
+		background-image: url(../img/price-bg.jpg)
+
+
+	#three
+		p, li
+			color: #54595f
+			margin-bottom: 20px
+
+	&__section
+		padding: 40px 0 110px
+
+		h3, td, tr
+			text-align: center
+
+		th
+			line-height: 1.1
+		
+		h3
+			margin-bottom: 30px
+			font-size: 20px
+
+		h2
+			line-height: 1
+			color: #7a7a7a
+			line-height: 20px
+			font-size: 20px
+			font-weight: 500
+			margin-bottom: 15px
+		
+		p, ul
+			color: #7a7a7a
+			font-size: 16px
+			line-height: 1.7
+			margin-bottom: 40px
+
+	&__list
+		display: flex
+		justify-content: space-between
+		margin-bottom: 40px
+
+		li
+			display: block
+			width: 100%
+			&:nth-child(2)
+				a
+					background: #f1f1f1
+
+		a
+			display: block
+			position: relative
+			background: #fcfcfc
+			color: #aaa
+			font-size: 16px
+			line-height: 1.5
+			padding: 17px 0
+			text-align: center
+			transition: all .3s
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: -20px
+				left: 50%
+				transform: translate(-50%, 0)
+				border-bottom: 10px solid transparent
+				border-left: 10px solid transparent
+				border-right: 10px solid transparent
+				border-top: 10px solid $accent
+				transition: all .3s
+				opacity: 0
+				z-index: 1
+
+			&:hover
+				background: #f1f1f1
+
+		.active
+			background: $accent !important
+			color: #fff
+
+			&::before
+				opacity: 1
+
+	&__green
+		tr
+			&:nth-child(1)
+				background: $green
+
+		h3
+			color: $green
+
+	&__red
+		tr
+			&:nth-child(1)
+				background: $accent
+
+		h3
+			color: $accent
+
+	&__blue
+		tr
+			&:nth-child(1)
+				background: $blue
+
+				th:nth-child(1)
+					background: #fff
+
+			&:nth-child(2)
+				th
+					font-weight: 700
+					&:nth-child(1)
+						background: #fff
+
+
+			th:nth-child(1)
+				background: #F2F2F2
+				font-weight: 700
+				color: rgb(64, 64, 64)
+
+		h3
+			color: $blue
+
+	&__table
+		width: 100%
+		font-size: 16px
+		color: #404040
+		margin-bottom: 30px
+
+		tr
+			height: 28px
+
+			&:nth-child(1)
+				color: #fff
+				font-size: 16px
+
+				th
+					font-weight: 700
+
+			&:nth-child(2)
+				background: #F2F2F2
+				height: 40px
+
+		th
+			font-weight: 300
+
+
+
+
+	.tabs__wrap
+		padding: 0 30px
+
